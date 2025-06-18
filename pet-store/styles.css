@@ -60,3 +60,20 @@ button {
 button:hover {
   background-color: #005f7a;
 }
+
+select {
+  padding: 8px 12px;
+  border-width: 0;
+  border-radius: 6px;
+  background-color: #cbcbcb;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+select:focus {
+  border-color: #008cba;
+  background-color: #fff;
+}

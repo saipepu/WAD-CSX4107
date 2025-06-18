@@ -26,25 +26,19 @@
 
     <main>
       <section class="featured">
-        <h2>Featured Pets</h2>
-
-        <div class="pet-list" id="pet-list">
-          <div class="pet">
-            <img src="img/dog.jpg" alt="Cute Dog" />
-
-            <p>Charlie - Golden Retriever</p>
-
-            <button onclick="adoptPet()">Adopt Now</button>
-          </div>
-
-          <div class="pet">
-            <img src="img/cat.webp" alt="Cute Cat" />
-
-            <p>Milo - British Shorthair</p>
-
-            <button onclick="adoptPet()">Adopt Now</button>
-          </div>
+        <div
+          style="display: flex; align-items: center; justify-content: between"
+        >
+          <h2 style="margin-right: 8px">Select Pet Type</h2>
+          <!-- filter option -->
+          <select id="filter" onchange="filterPets(this.value)">
+            <option value="all">All</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+          </select>
         </div>
+
+        <div class="pet-list" id="pet-list"></div>
       </section>
     </main>
 
