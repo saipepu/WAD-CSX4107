@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saipepu - Web Development</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont,
+          'Segoe UI', system-ui, sans-serif;
+        line-height: 1.6;
+        color: #000;
+        background: #f8f9fa;
+        font-weight: 300;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 60px 40px;
+      }
+
+      .header {
+        margin-bottom: 80px;
+      }
+
+      .header h1 {
+        font-size: 48px;
+        font-weight: 200;
+        letter-spacing: -1px;
+        margin-bottom: 8px;
+      }
+
+      .header .subtitle {
+        font-size: 16px;
+        color: #666;
+        font-weight: 300;
+      }
+
+      .section {
+        margin-bottom: 60px;
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 60px;
+      }
+
+      .section:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .section-title {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #999;
+        margin-bottom: 30px;
+      }
+
+      .course-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+      }
+
+      .info-item {
+        text-align: left;
+      }
+
+      .info-label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #999;
+        margin-bottom: 4px;
+      }
+
+      .info-value {
+        font-size: 18px;
+        font-weight: 400;
+        color: #000;
+      }
+
+      .about-text {
+        font-size: 16px;
+        line-height: 1.7;
+        color: #333;
+        max-width: 600px;
+      }
+
+      .skills-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .skill {
+        padding: 8px 16px;
+        background: #000;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 2px;
+        transition: all 0.2s ease;
+      }
+
+      .skill:hover {
+        background: #333;
+        transform: translateY(-1px);
+      }
+
+      .footer {
+        margin-top: 80px;
+        padding-top: 40px;
+        border-top: 1px solid #e0e0e0;
+        font-size: 12px;
+        color: #999;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 40px 20px;
+        }
+
+        .header h1 {
+          font-size: 36px;
+        }
+
+        .course-info {
+          grid-template-columns: 1fr;
+          gap: 30px;
+        }
+
+        .section {
+          margin-bottom: 40px;
+          padding-bottom: 40px;
+        }
+      }
+
+      /* Subtle entrance animation */
+      .container {
+        animation: fadeIn 0.8s ease-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Sai Zin Min Khant</h1>
+        <h5>ID-6511923</h5>
+        <p class="subtitle">Web Developer</p>
+      </header>
+
+      <section class="section">
+        <h2 class="section-title">Course Information</h2>
+        <div class="course-info">
+          <div class="info-item">
+            <div class="info-label">Instructor</div>
+            <div class="info-value">A. Chayapol</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Course Code</div>
+            <div class="info-value">WAD-CSX4107</div>
+          </div>
+          <div class="info-item">
+            <div class="info-label">Subject</div>
+            <div class="info-value">Web Development</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">About</h2>
+        <p class="about-text">
+          Experienced web developer currently enrolled in advanced web
+          development coursework. Focused on building clean, efficient, and
+          scalable web applications using modern technologies and best
+          practices. Committed to writing semantic code and creating optimal
+          user experiences.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Technical Stack</h2>
+        <div class="skills-grid">
+          <span class="skill">HTML5</span>
+          <span class="skill">CSS3</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">React</span>
+          <span class="skill">Node.js</span>
+          <span class="skill">Git</span>
+          <span class="skill">REST APIs</span>
+          <span class="skill">Responsive Design</span>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>WAD-CSX4107 • 2025</p>
+      </footer>
+    </div>
+  </body>
+</html>
