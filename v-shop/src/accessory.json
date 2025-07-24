@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Door Visor", "price": 100 },
+  { "id": 2, "name": "Mud Flap", "price": 200 },
+  { "id": 3, "name": "Car Cover", "price": 300 },
+  { "id": 4, "name": "Seat Cover", "price": 400 },
+  { "id": 5, "name": "Steering Cover", "price": 500 }
+]
